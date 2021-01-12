@@ -1,5 +1,5 @@
-import 'package:flutter_architecture/src/repositories/auth.repository.dart';
-import 'package:flutter_architecture/src/widgets/toast.dart';
+import 'package:Drohealth/src/repositories/auth.repository.dart';
+import 'package:Drohealth/src/widgets/toast.dart';
 import 'package:rxdart/rxdart.dart';
 
 class AuthBloc {

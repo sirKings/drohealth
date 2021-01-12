@@ -1,4 +1,4 @@
-import 'package:flutter_architecture/src/repositories/sources/local/tables/todo.table.dart';
+import 'package:Drohealth/src/repositories/sources/local/tables/todo.table.dart';
 import 'package:sqflite/sqflite.dart';
 import '../dbconfig.dart';
 

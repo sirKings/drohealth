@@ -1,5 +1,5 @@
-import 'package:flutter_architecture/src/helpers/storage/storage.helper.dart';
-import 'package:flutter_architecture/src/helpers/storage/storage.keys.dart';
+import 'package:Drohealth/src/helpers/storage/storage.helper.dart';
+import 'package:Drohealth/src/helpers/storage/storage.keys.dart';
 import 'package:dio/dio.dart';
 
 class HttpHelper {

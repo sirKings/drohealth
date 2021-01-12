@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_architecture/src/widgets/text.dart';
+import 'package:Drohealth/src/widgets/text.dart';
 import 'package:rxdart/rxdart.dart';
 
-import 'package:flutter_architecture/src/values/colors.dart' as colors;
+import 'package:Drohealth/src/values/colors.dart' as colors;
 
 class Loading extends StatefulWidget {
   final bool backgroundTransparent;

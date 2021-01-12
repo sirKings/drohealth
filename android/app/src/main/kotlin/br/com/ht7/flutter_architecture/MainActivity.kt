@@ -1,4 +1,4 @@
-package br.com.ht7.flutter_architecture
+package br.com.ht7.Drohealth
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

@@ -1,8 +1,8 @@
-import 'package:flutter_architecture/src/blocs/drawer.bloc.dart';
-import 'package:flutter_architecture/src/widgets/text.dart';
+import 'package:Drohealth/src/blocs/drawer.bloc.dart';
+import 'package:Drohealth/src/widgets/text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_architecture/src/values/colors.dart' as colors;
+import 'package:Drohealth/src/values/colors.dart' as colors;
 
 class CustomDrawer extends StatefulWidget {
   @override

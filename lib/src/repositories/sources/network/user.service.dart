@@ -1,6 +1,6 @@
-import 'package:flutter_architecture/src/helpers/http/http.helper.dart';
-import 'package:flutter_architecture/src/models/response.model.dart';
-import 'package:flutter_architecture/src/models/user.model.dart';
+import 'package:Drohealth/src/helpers/http/http.helper.dart';
+import 'package:Drohealth/src/models/response.model.dart';
+import 'package:Drohealth/src/models/user.model.dart';
 import './base/endpoints.dart' as Endpoints;
 
 class UserApiProvider{

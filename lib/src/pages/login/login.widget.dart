@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_architecture/src/blocs/auth.bloc.dart';
-import 'package:flutter_architecture/src/widgets/button.dart';
-import 'package:flutter_architecture/src/widgets/edit_text.dart';
-import 'package:flutter_architecture/src/widgets/logo.dart';
-import 'package:flutter_architecture/src/values/dimens.dart' as dimens;
+import 'package:Drohealth/src/blocs/auth.bloc.dart';
+import 'package:Drohealth/src/widgets/button.dart';
+import 'package:Drohealth/src/widgets/edit_text.dart';
+import 'package:Drohealth/src/widgets/logo.dart';
+import 'package:Drohealth/src/values/dimens.dart' as dimens;
 
 class LoginWidget {
   Widget form(BuildContext context, AuthBloc bloc) {

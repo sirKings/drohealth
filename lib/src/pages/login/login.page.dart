@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_architecture/src/blocs/auth.bloc.dart';
-import 'package:flutter_architecture/src/widgets/loading.dart';
-import 'package:flutter_architecture/src/pages/login/login.widget.dart';
+import 'package:Drohealth/src/blocs/auth.bloc.dart';
+import 'package:Drohealth/src/widgets/loading.dart';
+import 'package:Drohealth/src/pages/login/login.widget.dart';
 import 'package:provider/provider.dart';
 
 class LoginPage extends StatefulWidget {
