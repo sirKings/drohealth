@@ -1,7 +1,7 @@
 import 'package:Drohealth/src/helpers/nav/nav_no_animation.dart';
 import 'package:Drohealth/src/helpers/storage/storage.helper.dart';
 import 'package:Drohealth/src/helpers/storage/storage.keys.dart';
-import 'package:Drohealth/src/pages/login/login.page.dart';
+import 'package:Drohealth/src/views/ui/auth/login/login.page.dart';
 import 'package:flutter/cupertino.dart';
 
 class DrawerBloc {
