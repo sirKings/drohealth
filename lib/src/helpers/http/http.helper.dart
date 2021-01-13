@@ -2,6 +2,8 @@ import 'package:Drohealth/src/helpers/storage/storage.helper.dart';
 import 'package:Drohealth/src/helpers/storage/storage.keys.dart';
 import 'package:dio/dio.dart';
 
+// Since it might be difficult to test static functions i decided to make this class
+// function non-static, so that the class can be injected and later on Mock when we want to perform unit-testing
 class HttpHelper {
   static Dio _client;
 
@@ -18,23 +20,23 @@ class HttpHelper {
     return _client;
   }
 
-  static Future<Response> get(String url) async {
+  Future<Response> get(String url) async {
     final instance = await _getInstance();
     return instance.get(url);
   }
 
-  static Future<Response> post(String url, { dynamic body }) async {
+  Future<Response> post(String url, {dynamic body}) async {
     final instance = await _getInstance();
     return instance.post(url, data: body);
-  } 
+  }
 
-  static Future<Response> put(String url, { dynamic body }) async {
+  Future<Response> put(String url, {dynamic body}) async {
     final instance = await _getInstance();
     return instance.put(url, data: body);
-  } 
+  }
 
-  static Future<Response> delete(String url, { dynamic body }) async {
+  Future<Response> delete(String url, {dynamic body}) async {
     final instance = await _getInstance();
     return instance.delete(url);
-  } 
+  }
 }
