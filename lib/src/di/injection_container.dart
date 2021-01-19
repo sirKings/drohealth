@@ -1,3 +1,4 @@
+import 'package:Drohealth/src/di/bloc/bloc_module.dart' as BlocModule;
 import 'package:Drohealth/src/di/network/network_module.dart' as NetworkModule;
 import 'package:Drohealth/src/di/repositories/repository_module.dart' as RepositoryModule;
 import 'package:Drohealth/src/di/services/service_module.dart' as ServiceModule;
@@ -14,4 +15,6 @@ Future<void> init() async {
 
   // Service Modules
   ServiceModule.init(injector);
+
+  BlocModule.init(injector);
 }

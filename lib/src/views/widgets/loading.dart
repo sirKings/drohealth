@@ -9,12 +9,7 @@ class Loading extends StatefulWidget {
   final Observable<bool> status;
   final Widget child;
 
-  const Loading({Key key,
-    this.status,
-    this.child,
-    this.message,
-    this.backgroundTransparent
-  }) : super(key: key);
+  const Loading({Key key, this.status, this.child, this.message, this.backgroundTransparent}) : super(key: key);
 
   @override
   _LoadingState createState() => _LoadingState();
@@ -28,38 +23,30 @@ class _LoadingState extends State<Loading> {
         initialData: false,
         builder: (context, snapshot) {
           return Stack(
-            children: <Widget>[
-              widget.child,
-              _loading(snapshot.data)
-            ],
+            children: <Widget>[widget.child, _loading(snapshot.data)],
           );
-        }
-    );
+        });
   }
 
   Widget _loading(bool loading) {
-    return loading == true ?
-    Container(
-      alignment: Alignment.center,
-      color: widget.backgroundTransparent == true ? Colors.transparent : Colors.black54,
-      child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: CustomText(
-                text: widget.message,
-                white: widget.backgroundTransparent == true ? false : true,
+    return loading == true
+        ? Container(
+            alignment: Alignment.center,
+            color: widget.backgroundTransparent == true ? Colors.transparent : Colors.black54,
+            child: Column(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: CustomText(
+                  text: widget.message,
+                  white: widget.backgroundTransparent == true ? false : true,
+                ),
               ),
-            ),
-            CircularProgressIndicator(
-              backgroundColor: Colors.transparent,
-              valueColor: new AlwaysStoppedAnimation<Color>(colors.accentColor),
-            )
-          ]
-      ),
-    )
-        :
-    Container();
+              CircularProgressIndicator(
+                backgroundColor: Colors.transparent,
+                valueColor: new AlwaysStoppedAnimation<Color>(colors.accentColor),
+              )
+            ]),
+          )
+        : Container();
   }
 }

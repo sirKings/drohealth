@@ -35,6 +35,9 @@ dependencies:
   connectivity: ^0.4.6+2
   sqflite: ^1.2.0
   get_it: ^5.0.4
+  flutter_bloc: ^6.1.1
+  bloc: ^6.1.1
+  equatable: ^1.2.5
 
 dev_dependencies:
   flutter_test:
